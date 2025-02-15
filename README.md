@@ -18,6 +18,6 @@ A simple and responsive event registration form built with HTML and CSS. Easily 
    ```bash
    git clone https://github.com/your-username/event-registration-form.git
 
-2. **Open index.html in your browser to view the form.
+2. Open index.html in your browser to view the form.
 
-3. **Customize: Feel free to change the HTML and CSS to fit your needs.
+3. Customize: Feel free to change the HTML and CSS to fit your needs.
