@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <h1 id="title">Event Registration</h1>
+        <p id="description">Fill out the form below to register for the event.</p>
+
+        <form id="survey-form">
+            <h2 for="name" id="name-label">Name:</h2>
+            <input id="name" type="text" placeholder="Enter your full name" required>
+
+            <h2 for="email" id="email-label">Email:</h2>
+            <input id="email" type="email" placeholder="Enter your email address" required>
+
+            <h2 for="number" id="number-label">Number:</h2>
+            <input id="number" type="number" min="0" max="100" placeholder="Enter a number between 0 and 100" required>
+
+            <h2 for="phone" id="phone-label">Phone Number:</h2>
+            <input id="phone" type="tel" min="10000000000" max="99999999999" pattern="\([0-9]{2}\)[0-9]{5}-[0-9]{4}" placeholder="(XX) XXXXX-XXXX" required>
+
+            <!-- Título para o grupo de opções -->
+            <h2 id="question-title">Select Your Experience Level</h2>
+
+            <!-- Grupo de botões de rádio -->
+            <div class="radio-group">
+                <label for="beginner">Beginner</label>
+                <input type="radio" id="beginner" name="experience" value="beginner">
+                
+                <label for="intermediate">Intermediate</label>
+                <input type="radio" id="intermediate" name="experience" value="intermediate">
+                
+                <label for="expert">Expert</label>
+                <input type="radio" id="expert" name="experience" value="expert">
+            </div>
+
+            <h2 for="dropdown">Select Your Session:</h2>
+            <select id="dropdown" required>
+                <option value="session1">Session 1: Introduction to the Event</option>
+                <option value="session2">Session 2: Keynote Speech</option>
+            </select>
+
+            <h2 id="checkbox-title">Select Your Interests</h2>
+
+            <!-- Grupo de checkboxes -->
+            <div class="checkbox-group">
+                <label for="coding">Coding</label>
+                <input type="checkbox" id="coding" name="interests" value="coding">
+                
+                <label for="gaming">Gaming</label>
+                <input type="checkbox" id="gaming" name="interests" value="gaming">
+                
+                <label for="reading">Reading</label>
+                <input type="checkbox" id="reading" name="interests" value="reading">
+            </div>
+
+            <h2 for="comments">Additional Comments:</h2>
+            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter any additional comments here..."></textarea>
+
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
